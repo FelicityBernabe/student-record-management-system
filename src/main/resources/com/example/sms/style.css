@@ -1,0 +1,130 @@
+/* Color Palette definitions */
+.root {
+    -primary-color: #89B0AE;
+    -accent-color: #A7C7E7;
+    -secondary-color: #BEE3DB;
+    -bg-color: #FAF9F9;
+    -text-color: #3A405A;
+    -destructive-color: #E07A7A;
+}
+
+/* Master Pane */
+.main-window {
+    -fx-background-color: -bg-color;
+}
+
+/* Header Section */
+.header-bar {
+    -fx-background-color: -primary-color;
+    -fx-border-color: transparent transparent -accent-color transparent;
+    -fx-border-width: 0 0 2 0;
+}
+.header-title {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Sidebar and Workspace Card Panels */
+.card-panel {
+    -fx-background-color: white;
+    -fx-border-color: -primary-color;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 2);
+}
+
+/* Form Fields Layout label */
+.form-label {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: -text-color;
+    -fx-font-weight: bold;
+}
+
+/* Input boxes & Dropdown selectors */
+.text-field, .choice-box {
+    -fx-background-color: white;
+    -fx-border-color: -secondary-color;
+    -fx-border-width: 2px;
+    -fx-text-fill: -text-color;
+    -fx-padding: 6px;
+}
+.text-field:focused, .choice-box:focused {
+    -fx-border-color: -primary-color;
+}
+
+/* Button UI Definitions */
+.btn-add {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+.btn-add:hover { -fx-background-color: #6e9593; }
+
+.btn-update {
+    -fx-background-color: -secondary-color;
+    -fx-text-fill: -text-color;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+.btn-update:hover { -fx-background-color: #a8d4ca; }
+
+.btn-delete {
+    -fx-background-color: -destructive-color;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+.btn-delete:hover { -fx-background-color: #d96363; }
+
+.btn-clear {
+    -fx-background-color: white;
+    -fx-border-color: -secondary-color;
+    -fx-border-width: 2px;
+    -fx-text-fill: -text-color;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+.btn-clear:hover { -fx-background-color: #f0f0f0; }
+
+/* Table View Theme styling */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: -primary-color;
+    -fx-border-width: 2px;
+}
+.table-view .column-header-background {
+    -fx-background-color: -primary-color;
+}
+.table-view .column-header {
+    -fx-background-color: -primary-color;
+    -fx-border-color: transparent -secondary-color -accent-color transparent;
+    -fx-border-width: 0 2 2 0;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent -secondary-color transparent;
+    -fx-border-width: 0 0 2 0;
+}
+.table-row-cell:filled:hover {
+    -fx-background-color: rgba(190, 227, 219, 0.3);
+}
+.table-row-cell:filled:selected {
+    -fx-background-color: rgba(212, 235, 252, 0.4);
+}
+.table-cell {
+    -fx-text-fill: -text-color;
+    -fx-border-color: transparent -secondary-color transparent transparent;
+    -fx-border-width: 0 2 0 0;
+    -fx-padding: 8px;
+}
+
